@@ -11,10 +11,9 @@ We propose three types of NND, which build upon multi-layer perceptron (MLP), co
 ```
 cd RNN/
 python get_data.py
-
 ```
 
-2. Run the deep neural network, ber is saved at `result/`.
+2. Run the deep neural network, BER is saved at `result/`.
 
 ```
 python mlp.py
