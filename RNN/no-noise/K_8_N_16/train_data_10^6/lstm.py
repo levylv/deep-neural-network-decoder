@@ -77,7 +77,7 @@ res_ber = np.zeros([len(train_ratio), len(epoch_setting)])
 keep_prob = tf.placeholder(tf.float32)
 coded_words = tf.placeholder(tf.float32, [None, N])
 labels = tf.placeholder(tf.float32, [None, K])
-batch_size = tf.placeholder(tf.int32) # we need different batch size for train and test
+batch_size = tf.placeholder(tf.int32, []) # we need different batch size for train and test
 x_input = tf.reshape(coded_words, [-1, N, 1])
 
 logits = lstm(x_input, N, K, batch_size, keep_prob)

@@ -46,7 +46,7 @@ for i in range(len(train_ratio)):
 
 plt.figure()
 for i in range(len(train_ratio)):
-    plt.semilogy(test_snr, res_ber[i, best_train_snr_index[i], :, -1], line_style_1[i], lw = 3)
+    plt.semilogy(test_snr, int(res_ber[i, best_train_snr_index[i], :, -1]), line_style_1[i], lw = 3)
 
 plt.semilogy(test_snr, map_ber, 'k>--', lw = 3)
 plt.grid(True)
